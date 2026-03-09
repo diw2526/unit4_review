@@ -102,7 +102,7 @@ $banner-sizes: (
   "l": 75%
 );
 
-%banner-base {
+.banner-base {
     @extend .bg-light;
     @extend .text-secondary;
     @extend .lead;
@@ -122,7 +122,7 @@ $banner-sizes: (
 
  @each $size, $width in $banner-sizes {
     .banner-#{$size} {
-        @extend %banner-base;
+        @extend .banner-base;
         width: $width;
     }
  }
